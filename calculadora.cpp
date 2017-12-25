@@ -27,6 +27,12 @@ int resta(int v1, int v2){
 
 }
 
+int multiplicacion(int v1, int v2){
+
+    return v1 * v2;
+
+}
+
 int main(){
 
     char opt;
@@ -47,7 +53,7 @@ int main(){
                 break;
             case '2': cout << resta(valor1,valor2) << endl;
                 break;
-            case '3': 
+            case '3': cout << multiplicacion(valor1,valor2) << endl;
                 break;
             case '4': 
                 break;
