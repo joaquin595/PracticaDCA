@@ -21,6 +21,12 @@ int suma(int v1, int v2){
 
 }
 
+int resta(int v1, int v2){
+
+    return v1 + v2;
+
+}
+
 int main(){
 
     char opt;
@@ -39,7 +45,7 @@ int main(){
         switch(opt){
             case '1': cout << suma(valor1,valor2) << endl;
                 break;
-            case '2': 
+            case '2': cout << resta(valor1,valor2) << endl;
                 break;
             case '3': 
                 break;
