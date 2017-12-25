@@ -33,6 +33,16 @@ int multiplicacion(int v1, int v2){
 
 }
 
+int division(int v1, int v2){
+
+    if(v2 == 0){
+        cout << "Imposible dividir por 0" << endl;
+        return -1;
+    }
+    return v1 / v2;
+
+}
+
 int main(){
 
     char opt;
@@ -55,7 +65,8 @@ int main(){
                 break;
             case '3': cout << multiplicacion(valor1,valor2) << endl;
                 break;
-            case '4': 
+            case '4': int res = division(valor1,valor2);
+                if(res != -1) cout << res << endl;
                 break;
         }
 
